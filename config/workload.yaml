@@ -13,11 +13,11 @@ spec:
       - name: BP_JVM_VERSION
         value: "11"
   params:
-  - name: annotations
-    value:
-      autoscaling.knative.dev/minScale: "1"
+    - name: annotations
+      value:
+        autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/rajks24/tanzu-java-web-app.git
       ref:
         branch: main
